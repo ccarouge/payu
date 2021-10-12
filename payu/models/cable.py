@@ -80,7 +80,7 @@ class Cable(Model):
         log_path = os.path.join(self.work_path, 'logs')
         mkdir_p(log_path)
         log_files = [f for f in os.listdir(self.work_path)
-                         if f.startswith('cable_log')]
+                     if f.startswith('cable_log')]
         for f in log_files:
             f_src = os.path.join(self.work_path, f)
             shutil.move(f_src, log_path)
