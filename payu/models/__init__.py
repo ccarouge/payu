@@ -1,5 +1,6 @@
 from payu.models.access import Access
 from payu.models.accessom2 import AccessOm2
+from payu.models.cable import Cable
 from payu.models.cice import Cice
 from payu.models.cice5 import Cice5
 from payu.models.gold import Gold
@@ -18,8 +19,9 @@ from payu.models.yatm import Yatm
 from payu.models.model import Model
 
 index = {
-    'access':     Access,
+    'access':   Access,
     'access-om2': AccessOm2,
+    'cable':    Cable,
     'cice':     Cice,
     'cice5':    Cice5,
     'gold':     Gold,
